@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:background="#020513"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+   <androidx.cardview.widget.CardView
+       android:id="@+id/card1"
+       android:layout_width="300dp"
+       android:layout_height="150dp"
+       android:layout_centerHorizontal="true"
+       android:layout_marginTop="50dp"
+       android:backgroundTint="#18234C"
+       app:cardCornerRadius="20dp"
+       app:cardElevation="50dp"
+       >
+
+       <TextView
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:text="Weight"
+           android:textColor="#857C7C"
+           android:textStyle="bold"
+           android:textSize="20dp"
+           android:layout_marginTop="20dp"
+           android:layout_marginLeft="50dp"
+           />
+       <EditText
+           android:inputType="number"
+           android:id="@+id/Wedit"
+           android:textAlignment="center"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:layout_marginTop="60dp"
+           android:layout_marginRight="120dp"
+           android:textSize="25sp"
+           android:textColor="@color/white"
+           android:textStyle="bold"
+           />
+       <TextView
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:text="Kg"
+           android:textStyle="bold"
+           android:textColor="#857C7C"
+           android:layout_gravity="end"
+           android:layout_marginTop="80dp"
+           android:textSize="20dp"
+           android:layout_marginRight="90dp"
+           />
+
+   </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card2"
+        android:layout_width="300dp"
+        android:layout_height="150dp"
+        android:layout_below="@id/card1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:backgroundTint="#18234C"
+        app:cardCornerRadius="20dp"
+        app:cardElevation="50dp"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Height"
+            android:textColor="#857C7C"
+            android:textStyle="bold"
+            android:textSize="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="50dp"
+            />
+        <EditText
+            android:id="@+id/Hedit"
+            android:inputType="number"
+            android:textAlignment="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="60dp"
+            android:layout_marginRight="120dp"
+            android:textSize="25sp"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Cm"
+            android:textStyle="bold"
+            android:textColor="#857C7C"
+            android:layout_gravity="end"
+            android:layout_marginTop="80dp"
+            android:textSize="20dp"
+            android:layout_marginRight="90dp"
+            />
+
+    </androidx.cardview.widget.CardView>
+
+    <Button
+        android:id="@+id/reult_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/card2"
+        android:layout_marginTop="20dp"
+        android:layout_margin="50dp"
+        android:backgroundTint="#C57613"
+        android:text="CALCULATE"
+        android:textSize="25dp"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        />
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="300dp"
+        android:layout_height="150dp"
+        android:layout_below="@id/reult_btn"
+        android:layout_marginTop="20dp"
+        android:backgroundTint="#18234C"
+        app:cardCornerRadius="20dp"
+        android:layout_centerHorizontal="true"
+        app:cardElevation="50dp">
+
+        <TextView
+            android:id="@+id/result_txt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="10dp"
+            android:textColor="@color/white"
+            android:textSize="30dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/helth_txt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:textColor="#25A51C"
+            android:textSize="25dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:layout_marginLeft="60dp"
+            android:textColor="@color/white"
+            android:layout_marginBottom="20dp"
+            android:id="@+id/av_txt"
+            />
+
+
+    </androidx.cardview.widget.CardView>
+
+</RelativeLayout>
